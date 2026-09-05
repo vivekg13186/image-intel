@@ -1,0 +1,40 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# imgintel outputs — these hold case data, so never commit them by accident
+imgintel-results/
+*.db
+*.db-wal
+*.db-shm
+imgintel-case.json
+evidence/
+findings.json
+findings.csv
+findings.jsonl
+summary.csv
+report.html
+
+# Model weights live in the platform cache, but catch stray downloads
+*.onnx
+
+# OS
+.DS_Store
+Thumbs.db
